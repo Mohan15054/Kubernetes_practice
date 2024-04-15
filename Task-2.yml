@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: task-2
+  namespace: mohan
+spec:
+  replicas: 5
+  selector:
+    matchLabels:
+      app: nginxdemos
+  template:
+    metadata:
+      labels:
+        app: nginxdemos
+    spec:
+      containers:
+      - name: nginxdemos
+        image: nginxdemos/hello:0.1
+        ports:
+        - containerPort: 80
