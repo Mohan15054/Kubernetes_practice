@@ -1,1 +1,1 @@
-# Kubernetes_practice
+# Imagine you have a kubernetes cluster with 1 master and 2 worker nodes. write a nginx deployment with 3 replicas. Expose the deployment in woker node at port number 30124. From the master node using curl access the nginx home page through worker node. use appropriate service type definition. 
